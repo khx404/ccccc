@@ -1,0 +1,36 @@
+<!--导航开始--> 
+<ul class="nav">
+  <li><a href="{首页}" title="首页"><span class="iconfont">&#xe607;</span>首页</a></li>
+  {导航：编号=全部|条=全部}
+  <li><a href="[链接]" title="[栏目名称]">[栏目名称]</a></li>
+  {/导航}
+</ul>
+<!--导航结束--> 
+<!--内容开始-->
+<div class="allpage">
+  <div class="black-fixed iconfont">&#xe60f;</div>
+  <!--页头开始-->
+  <div class="header">
+    <div class="head"> <a href="{首页}" title="首页" class="home-btn commonfont">&#xe608;</a>
+      <p class="top-title">产品展示</p>
+      <div class="class-btn"><span class="commonfont">&#xe60a;</span></div>
+      <div class="nav-btn commonfont">&#xe60b;</div>
+    </div>
+    <div class="type">
+      <h1>搜索：</h1>
+      <div class="common-pro-search">
+        <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search" method="get" action="search.php">
+          <input type="hidden" name="list" value="2" />
+          <input type="text" class="common-text" name="sou_biaoti" placeholder="请输入关键词" onFocus="if(this.value==defaultValue)this.value=''" onBlur="if(this.value=='')this.value=defaultValue"/>
+          <input type="submit" class="common-submit commonfont" value="&#xe602;"/>
+        </form>
+      </div>
+      <h1> {栏目名称=2}：</h1>
+      <ul>
+        {导航：编号=2|条=全部}
+        {子导航}<li><a href="[链接]" title="[栏目名称]">[栏目名称]</a> <span class="commonfont class-down"></span></li>{/子导航}
+		{/导航}
+      </ul>
+    </div>
+  </div>
+  <!--页头结束--> 

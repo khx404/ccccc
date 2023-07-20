@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+  <title>{标题}</title> 
+  <meta name="keywords" content="{关键词}" /> 
+  <meta name="description" content="{摘要}" /> 
+  <link rel="stylesheet" type="text/css" href="{样式路径}/css/subpage.css" /> 
+  <script src="{样式路径}/css/jquery.js"></script> 
+  <script src="{样式路径}/css/nav.js"></script> 
+  <style>
+.head {
+	background: #02a119
+}
+.foot {
+	background: #231F1D
+}
+.nav {
+	background: #02a119
+}
+.nav_color {
+	background: #02a119
+}
+</style> 
+  <script src="{样式路径}/css/respond.js"></script> 
+  <script src="{样式路径}/css/sdcms.js"></script> 
+  <script src="{样式路径}/css/jquery.validator.js"></script> 
+  <link rel="stylesheet" type="text/css" href="{样式路径}/css/master.css" /> 
+  <link rel="stylesheet" type="text/css" href="{样式路径}/css/swiper.css" /> 
+  <script src="{样式路径}/css/swipe.js"></script> 
+  <script src="{样式路径}/css/lihe.js"></script> 
+ </head> 
+ <body>
+   {包含=top.html} 
+  <!--文章列表开始--> 
+  <div class="content"> 
+   <ul class="list-loop common_news" id="contentArea">
+     {列表=2} 
+    <li class="loop news2"><a href="[链接]" title=" [标题]"><span> [标题=14]</span><span>[发布时间=年/月/日]</span></a></li>
+     {/列表} 
+   </ul> 
+   <div class="pages">
+     {分页=首页|上一页|下一页} 
+   </div> 
+  </div> 
+  <!--文章列表结束-->
+  {包含=foot.html}  
+  <!--内容结束-->  
+ </body>
+</html>

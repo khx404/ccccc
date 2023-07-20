@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>{标题}</title> 
+  <meta name="keywords" content="{关键词}" /> 
+  <meta name="description" content="{摘要}" /> 
+  <link href="{样式路径}/css/css.css" rel="stylesheet" type="text/css" /> 
+  <script type="text/javascript" src="{样式路径}/css/jquery.js"></script> 
+ </head> 
+ <body>
+   {包含=top.html} 
+  <div class="clear"></div> 
+  <div style="text-align:center;">
+   <img src="{栏目图片=当前}" />
+  </div> 
+  <!-- 主体开始 --> 
+  <div class="content"> 
+   <div class="width1100">
+     {包含=left.html} 
+    <!--contLeft/--> 
+    <div class="contRight" id="main"> 
+     <div class="positions"> 
+      <strong>您当前所在的位置：</strong>
+      <a href="{首页}" target="_blank">首页</a> &gt;
+      <a href="{栏目链接=当前}" target="_blank">{栏目名称=当前}</a> &gt; 
+     </div> 
+     <!--positions/--> 
+     <div class="product">
+       {列表=2} 
+      <dl> 
+       <dt>
+        <a href="[链接]"><img src="[缩略图]" /></a>
+       </dt> 
+       <dd>
+        <a href="[链接]">[标题=6]</a>
+       </dd> 
+      </dl> {/列表} 
+      <div class="clear"></div> 
+     </div> 
+     <!--product/--> 
+     <div class="fenye">
+       {分页=首页|上一页|页码|下一页|末页|总数} 
+     </div> 
+    </div> 
+    <!--contRight/--> 
+    <div class="clear"></div> 
+   </div> 
+   <!--width1000/--> 
+  </div> 
+  <!--content/--> 
+  <!--底部--> 
+  <div class="clear"></div>
+  {包含=foot.html}  
+ </body>
+</html>

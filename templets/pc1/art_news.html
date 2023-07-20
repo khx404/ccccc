@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>{标题}</title> 
+  <meta name="keywords" content="{关键词}" /> 
+  <meta name="description" content="{摘要}" /> 
+  <link href="{样式路径}/css/css.css" rel="stylesheet" type="text/css" /> 
+  <script type="text/javascript" src="{样式路径}/css/jquery.js"></script> 
+ </head> 
+ <body>
+   {包含=top.html} 
+  <div class="clear"></div> 
+  <div style="text-align:center;">
+   <img src="{栏目图片=当前}" />
+  </div> 
+  <div class="content"> 
+   <div class="width1100">
+     {包含=left.html} 
+    <!--contLeft/--> 
+    <div class="contRight" id="main"> 
+     <div class="positions"> 
+      <span>您当前所在的位置：</span>
+      <a href="{首页}" target="_blank">首页</a> &gt;
+      <a href="{栏目链接=当前}" target="_blank">{栏目名称=当前}</a> &gt; 
+     </div> 
+     <!--positions/--> 
+     <div class="newinfo"> 
+      <h3>{标题}</h3> 
+      <time>时间：{发布时间=年/月/日} 浏览量：{点击量}</time> 
+      <div class="newinfoText">
+        {内容} 
+      </div> 
+      <table style="width:100%"> 
+       <tbody>
+        <tr> 
+         <td width="50%" align="left">上一篇：<a href="{上一篇链接}">{上一篇标题=25}</a> </td> 
+         <td width="50%" class="alignRight">下一篇：<a href="{下一篇链接}">{下一篇标题=25}</a> </td> 
+        </tr> 
+       </tbody>
+      </table> 
+     </div> 
+     <!--newinfo/--> 
+    </div> 
+    <!--contRight/--> 
+    <div class="clear"></div> 
+   </div> 
+   <!--width1000/--> 
+  </div> 
+  <!--content/--> 
+  <!--底部--> 
+  <div class="clear"></div>
+  {包含=foot.html}  
+ </body>
+</html>

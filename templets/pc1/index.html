@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>{标题}</title> 
+  <meta name="keywords" content="{关键词}" /> 
+  <meta name="description" content="{摘要}" /> 
+  <link href="{样式路径}/css/css.css" rel="stylesheet" type="text/css" /> 
+  <script type="text/javascript" src="{样式路径}/css/jquery.js"></script> 
+  <script type="text/javascript" src="{样式路径}/css/banner.js"></script> 
+  <script type="text/javascript" src="{样式路径}/css/js.js"></script> 
+ </head> 
+ <body> 
+  {包含=top.html}
+  <div class="ibanner"> 
+   <div class="ibanr"> 
+    <div class="img"> 
+     <ul>
+       {文章：栏目=11|起=0|条=2|缩略图=有} 
+      <li style="background:url([缩略图]) no-repeat center; "></li>
+       {/文章} 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <!--ibanner/--> 
+  <div class="clear"></div> 
+  <div class="inabout"> 
+   <div class="width1100"> 
+    <div class="aboutdesc"> 
+     <div class="catname"> 
+      <span class="en">ABOUT</span> 
+      <span class="cn">关于我们</span> 
+      <span class="line"></span> 
+     </div> 
+     <!--positions/--> 
+     <div class="abouttext">
+      {栏目内容=1|260}
+     </div> 
+     <a href="{栏目链接=1}" class="more">查看更多</a> 
+    </div> 
+    <div class="aboutimg"> 
+     <img src="{样式路径}/images/inaboutimg.png" /> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="inpro"> 
+   <div class="width1100"> 
+    <div class="catnames"> 
+     <span>产品展示</span> 
+     <p>定位于做环保健康产品，是国内板材领域值得信赖的产品生产商和供应商，板材木业产品生产能力行业领先。</p> 
+    </div> 
+    <div class="inprolist"> 
+     <ul class="proEq">
+       {导航：编号=2|条=全部} 
+       {子导航} 
+      <li>[栏目名称]</li> 
+       {/子导航} 
+      {/导航} 
+     </ul> 
+     <div class="procont"> 
+      <ul class="prolist">
+        {文章：栏目=8|起=0|条=8|缩略图=有} 
+       <li> <a href="[链接]"><img src="[缩略图]" alt="[标题]" /></a> <a href="[链接]"><span>[标题=15]</span></a> </li> 
+        {/文章} 
+      </ul> 
+      <ul class="prolist">
+        {文章：栏目=9|起=0|条=8|缩略图=有} 
+       <li> <a href="[链接]"><img src="[缩略图]" alt="[标题]" /></a> <a href="[链接]"><span>[标题=15]</span></a> </li> 
+        {/文章} 
+      </ul> 
+      <ul class="prolist"> 
+       {文章：栏目=10|起=0|条=8|缩略图=有} 
+       <li> <a href="[链接]"><img src="[缩略图]" alt="[标题]" /></a> <a href="[链接]"><span>[标题=15]</span></a> </li> 
+       {/文章} 
+      </ul>
+      <ul class="prolist"> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <!--inPro/--> 
+  <div class="clear"></div> 
+  <div class="innew"> 
+   <div class="width1100"> 
+    <div class="catnames"> 
+     <span>新闻资讯</span> 
+     <p></p> 
+    </div> 
+    <div class="innewcont"> 
+     <div class="innewsleft">
+       {文章：栏目=4|起=0|条=1|缩略图=有} 
+      <div class="newone"> 
+       <div class="newtxt"> 
+        <span class="newtitle">[标题=20]</span> 
+        <div class="newdesc">
+         [摘要=40]
+        </div> 
+        <a href="[链接]" class="more">[详细]</a> 
+       </div> 
+       <div class="img">
+        <img src="[缩略图]" />
+       </div> 
+      </div>
+       {/文章}
+       {文章：栏目=4|起=1|条=1|缩略图=有} 
+      <div class="newtwo"> 
+       <div class="newtxt"> 
+        <span class="newtitle">[标题=20]</span> 
+        <div class="newdesc">
+         [摘要=40]
+        </div> 
+        <a href="[链接]" class="more">[详细]</a> 
+       </div> 
+       <div class="img">
+        <img src="[缩略图]"/>
+       </div> 
+      </div> 
+       {/文章} 
+     </div> 
+     
+     <div class="innewsright"> 
+      <ul class="newslist">
+        {文章：栏目=4|起=2|条=8} 
+       <li><a href="[链接]">[标题=20]<span>[发布时间=年-月-日]</span></a></li> 
+        {/文章} 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div style="height:50px; clear:both"></div>
+  <div class="inlink"> 
+   <div class="width1100"> 
+    <div class="linkdiv">
+     <i></i>
+     <strong>友情链接：</strong>
+    </div> 
+    <div class="link">
+      {友情链接} 
+     <a href="[链接]">[标题]</a>
+      {/友情链接} 
+    </div> 
+   </div> 
+  </div> 
+  <div class="clear"></div>
+  {包含=foot.html}  
+ </body>
+</html>

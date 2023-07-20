@@ -1,0 +1,23 @@
+  <div class="contLeft"> 
+   <div class="leftNav"> 
+    <dl>
+      {导航：编号=当前|条=全部} 
+     <dt class="leftNavCur">[栏目名称]</dt> 
+     {子导航}<dd><a href="[链接]" class="[当前样式=thiscursor]"><i></i><span class="">[栏目名称]</span></a> </dd>{/子导航}
+     {/导航} 
+    </dl> 
+   </div> 
+   <!--leftNav/--> 
+   <div class="left_new"> 
+    <div class="left_new_tit"> 
+     <span>推荐资讯</span> 
+    </div> 
+    <div class="left_new_list"> 
+     <ul> 
+     {文章：栏目=4|起=0|条=6|推荐=一级}
+      <li><a href="[链接]">[标题=10]</a></li> 
+     {/文章}
+     </ul> 
+    </div> 
+   </div> 
+  </div>

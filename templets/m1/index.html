@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+  <title>{标题}</title> 
+  <meta name="keywords" content="{关键词}" /> 
+  <meta name="description" content="{摘要}" /> 
+  <meta name="author" content="order by baidu.com" /> 
+  <link rel="stylesheet" type="text/css" href="{样式路径}/css/subpage.css" /> 
+  <script src="{样式路径}/css/jquery.js"></script> 
+  <script src="{样式路径}/css/nav.js"></script> 
+  <style>
+.head {
+	background: #02a119
+}
+.foot {
+	background: #231F1D
+}
+.nav {
+	background: #02a119
+}
+.nav_color {
+	background: #02a119
+}
+</style> 
+  <script src="{样式路径}/css/respond.js"></script> 
+  <script src="{样式路径}/css/sdcms.js"></script> 
+  <script src="{样式路径}/css/jquery.validator.js"></script> 
+  <link rel="stylesheet" type="text/css" href="{样式路径}/css/master.css" /> 
+  <link rel="stylesheet" type="text/css" href="{样式路径}/css/swiper.css" /> 
+  <script src="{样式路径}/css/swipe.js"></script> 
+  <script src="{样式路径}/css/lihe.js"></script> 
+ </head> 
+ <body>
+   {包含=top.html} 
+  <div class="content content_new"> 
+   <!--幻灯片图片开始--> 
+   <div class="banner"> 
+    <div class="swiper-container"> 
+     <div class="swiper-wrapper">
+       {文章：栏目=11|起=0|条=2|缩略图=有} 
+      <div class="swiper-slide">
+       <img src="[缩略图]" />
+      </div>
+      {/文章} 
+     </div> 
+     <div class="swiper-pagination"></div> 
+    </div> 
+   </div> 
+   <!--幻灯片图片结束--> 
+   <!--首页导航开始--> 
+   <div class="nav_new"> 
+    <ul> 
+     <li class="blue"><a title="网站首页" href="{首页}">网站首页</a></li>
+     {导航：编号=全部|条=全部} 
+     <li class="blue"><a title="[栏目名称]" href="[链接]">[栏目名称]</a></li>
+     {/导航} 
+    </ul> 
+    <div class="c"></div> 
+   </div> 
+   <!--首页导航结束--> 
+   <!--热销服装开始--> 
+   <div class="common_title"> 
+    <h2><i></i><br /> 产品展示</h2> 
+    <span></span>
+   </div> 
+   <div class="index_case"> 
+    <ul>
+      {文章：栏目=2|起=0|条=3|缩略图=有} 
+     <li><a href="[链接]" title="[标题]"><img src="[缩略图]" alt="[标题]" /><span>[标题=5]</span></a></li>
+     {/文章} 
+     <div class="clear"></div> 
+    </ul> 
+   </div> 
+   <div class="more_i">
+    <a href="{栏目链接=2}" title="点击查看更多">点击查看更多</a>
+   </div> 
+   <!--热销服装结束--> 
+   <!--服装展厅开始--> 
+   <div class="common_title"> 
+    <h2><i></i><br /> 成功案例</h2> 
+    <span></span>
+   </div> 
+   <div class="index_show"> 
+    <ul>
+      {文章：栏目=5|起=0|条=4|缩略图=有} 
+     <li><a href="[链接]" title="[标题]"><img src="[缩略图]" alt="[标题]" /><span>[标题=6]</span></a></li>
+     {/文章} 
+     <div class="clear"></div> 
+    </ul> 
+   </div> 
+   <div class="more_i">
+    <a href="{栏目链接=5}" title="点击查看更多">点击查看更多</a>
+   </div> 
+   <!--服装展厅结束--> 
+   <!--公司动态开始--> 
+   <div class="common_title"> 
+    <h2><i></i><br /> 新闻资讯</h2> 
+    <span></span>
+   </div> 
+   <div class="case_i_c"> 
+    <ul> 
+    {文章：栏目=4|起=0|条=4|缩略图=有} 
+     <li> <a href="[链接]" title="[标题]"><img src="[缩略图]" alt="[标题]" width="15%" /> <h2>[标题=15]</h2> <span>[摘要=40]</span><i class="cricle1"></i><i class="cricle2"></i><i class="cricle3"></i><i class="cricle4"></i></a></li> 
+    {/文章} 
+    </ul> 
+   </div> 
+   <div class="more_i">
+    <a href="{栏目链接=4}" title="点击查看更多">点击查看更多</a>
+   </div> 
+   <!--公司动态结束--> 
+   <!--联系方式开始-->
+   {手机站手机底部信息} 
+   <!--联系方式结束--> 
+   <div class="cbtn-top">
+    <a href="javascript:;"><img src="{样式路径}/images/gotop.png" /></a>
+   </div> 
+   <div class="beian">
+    技术支持：
+    <a title="站帮主CMS" target="_blank" href="http://www.zhanbangzhu.com/">站帮主CMS</a> 
+    <a title="站帮主CMS教程" target="_blank" href="http://www.zbzcms.com/">站帮主CMS教程</a>
+   </div> 
+  </div> {包含=foot.html}  
+  <!--内容结束-->  
+ </body>
+</html>
