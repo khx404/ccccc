@@ -1,0 +1,18 @@
+CREATE TABLE `art` (
+  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `aid` char(50) DEFAULT NULL,
+  `tid` char(50) DEFAULT NULL,
+  `biaoti` varchar(500) DEFAULT NULL,
+  `waibulianjie` varchar(500) DEFAULT NULL,
+  `guanjianci` varchar(500) DEFAULT NULL,
+  `zhaiyao` varchar(500) DEFAULT NULL,
+  `zuozhe` char(50) DEFAULT NULL,
+  `fabushijian` char(50) DEFAULT NULL,
+  `fabudao` char(50) DEFAULT NULL,
+  `tuijian` char(50) DEFAULT NULL,
+  `suoluetu` text,
+  `paixu` int(6) DEFAULT '50',
+  `neirong` mediumtext,
+  `dianji` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8

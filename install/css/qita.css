@@ -1,0 +1,23 @@
+*{ padding:0; margin:0; list-style:none}
+body{ background:#f0f0f0;}
+.cle20{ height:20px; clear:both;}
+
+.box{box-shadow:-4px 7px 46px 2px rgba(0, 0, 0, 0.1); background:#fff;  margin:0 auto;width:450px; border-radius:5px; height:auto; overflow:hidden}
+.boxcon{ padding:20px 30px; display:none}
+.boxcon p{ font-size:12px; color:#F00; line-height:28px;}
+.tit{ height:120px; line-height:120px; background:#777; color:#fff; font-size:22px; padding:0 30px;}
+.tit span{ font-size:12px; margin-left:20px;}
+.from{ width:100%;}
+.from th{font-weight:normal; font-size:13px; color:#666; text-align:right; width:100px;}
+.from th,.from td{border-bottom:1px solid #eee;height:50px; line-height:50px;}
+.from th span{ color:#F00}
+.from td input{ width:100%;height:50px; line-height:50px; border:none; text-indent:20px;}
+
+.from td label{font-size:13px; color:#666; display:inline-block; margin-left:20px;}
+.from td label input{display:inline-block;vertical-align: middle; height:auto; width:auto}
+
+.queren{ height:34px; line-height:34px; padding:0 25px; background:#1aacda; color:#fff; font-size:13px; display:inline-block; display:inline-block; border-radius:3px;}
+
+.art{ line-height:26px; font-size:13px; color:#333;}
+.ts{ font-size:12px; color:#F00; padding-left:20px;}
+iframe{ height:70px;}

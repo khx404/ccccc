@@ -1,0 +1,11 @@
+*{padding:0; margin:0;}
+.bor{border:1px solid #ccc;}
+.top{ height:auto; overflow:hidden; padding:5px 5px 10px 5px;}
+.top input,.top a{ margin-top:10px; height:26px; line-height:26px; padding:0 5px; background:none; border:1px solid #ddd; border-radius:3px; color:#333; font-size:13px;vertical-align:top; margin-left:5px;}
+.top .link{ width:200px;}
+.top .file-box{display:inline-block;position:relative;background:#fff;}
+.top .file-btn{position:absolute;width:100%;height:100%;top:0;left:0;margin-top:0; padding:0;outline: none;background-color: transparent;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity: 0;opacity: 0; }
+
+.edit_box{ height:auto;overflow-y:auto; border-top:none;padding:10px;}
+.edit{overflow-x:auto;border:none; display:block; width:100%;resize:none;outline:none}
+.edit img{ max-width:80%;}

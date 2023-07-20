@@ -1,0 +1,9 @@
+CREATE TABLE `liandong` (
+  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `lid` char(50) DEFAULT NULL,
+  `name` char(50) DEFAULT NULL,
+  `pinyin` char(50) DEFAULT NULL,
+  `paixu` char(50) DEFAULT NULL,
+  `run` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8

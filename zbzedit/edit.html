@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>站帮主编辑器</title>
+<link href="css/edit.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="zbz_edit_box">
+	<div class="top bor">
+    	<input type='button' class="yuanma" value='源代码' />
+        <input type='button' class="tijiao" data-type='Undo' data-zhi='7' value='撤销' />
+        <input type='button' class="tijiao" data-type='fontsize' data-zhi='7' value='一号' />
+        <input type='button' class="tijiao" data-type='fontsize' data-zhi='6' value='二号' />
+        <input type='button' class="tijiao" data-type='fontsize' data-zhi='5' value='三号' />
+        <input type='button' class="tijiao" data-type='fontsize' data-zhi='4' value='四号' />
+        <input type='button' class="tijiao" data-type='fontsize' data-zhi='3' value='五号' />
+        
+        <input type='button' class="tijiao" data-type='forecolor' data-zhi='#000000' value='黑' />
+        <input type='button' class="tijiao" data-type='forecolor' data-zhi='#FF0036' value='红' />
+        <input type='button' class="tijiao" data-type='forecolor' data-zhi='#B5B527' value='橙' />
+        <input type='button' class="tijiao" data-type='forecolor' data-zhi='#4F4FD9' value='蓝' />
+        <input type='button' class="tijiao" data-type='forecolor' data-zhi='#1FAF56' value='绿' />
+        
+        <input type='button' class="tijiao" data-type='bold' data-zhi='' value='加粗' />
+        <input type='button' class="tijiao" data-type='italic' data-zhi='' value='斜体' />
+        <input type='button' class="tijiao" data-type='underline' data-zhi='' value='下划线' />
+        <input type='button' class="tijiao" data-type='justifyleft' data-zhi='' value='左对齐' />
+        <input type='button' class="tijiao" data-type='justifycenter' data-zhi='' value='居中' />
+        <input type='button' class="tijiao" data-type='justifyright' data-zhi='' value='右对齐' />
+        <input type='button' class="tijiao" data-type='removeformat' data-zhi='' value='清空格式' />
+        <a class="queren file-box tijiao"><input id="up" multiple='multiple' class="file-btn" type="file" onchange="uploadFile(event)">图片</a>
+        <input type="text" class="link" placeholder="填写链接后选中文本添加" />
+        <input type='button' class="tijiao" data-type='createlink' value='加链接' />
+        <input type='button' class="tijiao" data-type='Unlink' data-zhi='' value='清除链接' />
+    </div>
+    
+    <div class="edit_box bor">
+    	<div class='edit' contenteditable='true' id='edit' style='overflow-x:auto;overflow-y:auto;height:400px;'></div>
+    </div>
+</div>
+<script src="js/edit.js"></script>
+</body>
+</html>

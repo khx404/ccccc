@@ -1,0 +1,10 @@
+CREATE TABLE `moxing` (
+  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` char(50) DEFAULT NULL,
+  `diaoyongmingcheng` char(50) DEFAULT NULL,
+  `leixing` char(50) DEFAULT NULL,
+  `morenzhi` text,
+  `paixu` int(6) DEFAULT '50',
+  `bitian` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8
